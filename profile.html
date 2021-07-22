@@ -13,9 +13,9 @@
     <meta property="og:site_name" content="KoKoa Talk"/>
     <meta property="og:description" content="Ddochi's wonderful talk page">
     <link rel="shortcut icon" href="https://pbs.twimg.com/media/EynNiE_XEAMyUi3.jpg"/>
-    <title>Welcome to Kokoa Talk</title>
+    <title>Friends - Kokoa Talk</title>
 </head>
-<body>
+<body id="profile-all">
    <div  class="status-bar"><!--follow BEM(Block Element Modifier)-->
        <div class="status-bar__column">
            <span>No Service</span><!--heroicon, Font Awosome-->
@@ -29,28 +29,45 @@
            <i class="fas fa-battery-full fa-lg"></i>
            <i class="fas fa-bolt"></i>
        </div>
-   </div> 
+   </div>   
 
-   <header class="welcome-header"> <!--alt + click: write together-->
-       <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
-       <p class="welcome-header__text">
-          If you have a Kakao Account, 
-         log in with your email or phone number
-       </p>
-   </header>
+   <header class="profile-header">
+    <div class="profile-header__column">
+        <a href="friends.html"><i class="fas fa-times fa-lg"></i></a>
+     </div>
+    <div class="profile-header__column">
+     <span><i class="fas fa-gift fa-lg"></i></span>
+     <span><i class="fas fa-qrcode fa-lg"></i></span>
+     <span><i class="fas fa-cog fa-lg"></i></span>
+    </div>
+    </header>
 
-   <form action="friends.html" method="GET" id="login-form">
-       <input name="username" type="text" placeholder="Email or phone number"/>
-       <input name="password" type="password" placeholder="Password"/>
-       <input type="submit" value="Log in"/>
-       <a href="#">Find Kakao Account or Password</a>
-   </form>
+   <main class="profile-screen">
+    <div class="profile-screen__content">
+       <img src="img/profile.JPG"/> 
+       <h4>Dochi</h4>
+    </div>     
+   </main>
+   <nav class="profile-bar">
+       <ul class="profile-bar__list">
+           <li class="profile-bar__btn">
+               <a class="profile-bar__link" href="#"><i class="fas fa-comment"></i></a>
+                <span>My Chatroom</span>
+            </li>
+           <li class="profile-bar__btn">
+                <span class="profile__dot dot"></span>
+               <a class="profile-bar__link" href="#"><i class="fas fa-pencil-alt"></i></a>
+               <span>Edit Profile</span>
+            </li>
+           <li class="profile-bar__btn">
+               <a class="profile-bar__link" href="#"><i class="fas fa-quote-right fa-lg"></i></a>
+               <span>KoKoaStory</span>
+            </li>
+       </ul>
+   </nav>
 
-   <div id="splash-screen">
-    <i class="fas fa-comment"></i>
-  </div>
-   <div id="no-mobile">
-    <span>Your screen is too big</span>
+  <div id="no-mobile">
+    <span>Your screen is super big</span>
     <i class="far fa-surprise"></i>
   </div>
   <div id="no-landscape">

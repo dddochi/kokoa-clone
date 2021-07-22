@@ -19,6 +19,8 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/realchat.css";
+@import "screens/profile.css";
+
 
 body{
     color:#2e363e;
