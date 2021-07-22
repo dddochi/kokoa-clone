@@ -3,6 +3,7 @@
     color: white;
 }
 .profile-header{
+    position:fixed;
     display: flex;
     width:100%;
     justify-content: space-between;
